@@ -89,12 +89,13 @@ function App() {
   }, [userToEdit]);
 
   return (
-    <main className="text-[22px]">
-  
-    <header className="flex justify-between p-5">
-    <h2 className="text-center p-2 font-bold">Usuarios</h2>
+    <main className="text-[22px] overflow-hidden text-yellow-300">
+      <div className="-z-10 select-none w-[500px] h-[500px] fixed rounded-full blur-[150px] opacity-[50%] bg-[#8EFF8B] left-2 top-2"></div>
+      <div className="-z-10 select-none w-[500px] h-[500px] fixed rounded-full blur-[150px] opacity-[50%] bg-[#CE9BFF] right-2 bottom-2 "></div>
+    <header className="flex justify-between p-5 lg:flex lg:justify-around">
+    <h2 className="text-center p-2 font-bold">Users</h2>
     <button className="bg-blue-500 rounded-md mt-2 p-1 hover:bg-blue-700 transition-color hover:tracking-widest transition-all flex gap-1 items-center" onClick={handleOpenModal}>
-      Crear nuevo usuario
+      Create New User
       <IconUserPlus />
       </button>
     </header>
@@ -107,7 +108,7 @@ function App() {
           isUpdating={!!userToEdit}
           updateUser={updateUser}
         errors={errors}/>
-      <UserList
+      <UserList 
         users={users}
         deleteUser={deleteUser}
         handleUpdateUser={handleUpdateUser}
