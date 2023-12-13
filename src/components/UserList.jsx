@@ -3,10 +3,10 @@ import {  IconFileSettings, IconTrashX } from "@tabler/icons-react";
 const UserList = ({ users, deleteUser, handleUpdateUser }) => {
   return (
 
-    <article className=" w-[100%] h-[100vh]  display: flex justify-center items-center">
+    <article className=" w-[100%] h-[100vh]  display: flex justify-center items-center overflow-scroll mb-[50px]">
       
     
-    <section className="grid gap-6  grid-cols-[repeat(auto-fill,_500px)]  justify-center w-screen max-w-[500px] max-h-[500px] py-10  overflow-auto max-sm:grid-cols-1 max-sm:items-center max-sm:text-[18px] max-sm:ml-10 max-sm:mt-[8px] ">
+    <section className="grid gap-6   mt-[30px] justify-center w-screen max-w-[500px] max-h-[100%] py-10    max-sm:grid-cols-1 max-sm:items-center max-sm:text-[18px] max-sm:ml-10 max-sm:mt-[50px] ">
       {users.map((user) => (
        
        <article key={user.id} className="relative border-2  w-[500px] h-[165px] rounded-md p-3 hover:shadow-lg transition-shadow grid gap-2 bg-[#FFFFFF80]  line-clamp-1 max-sm:w-[300px] ">
