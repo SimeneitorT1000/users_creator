@@ -3,7 +3,7 @@ import {  IconFileSettings, IconTrashX } from "@tabler/icons-react";
 const UserList = ({ users, deleteUser, handleUpdateUser }) => {
   return (
 
-    <article className=" w-[100%] h-[100vh]  display: flex justify-center items-center overflow-scroll mb-[50px]">
+    <article className=" w-[100%] minh-[100vh]  display: flex justify-center items-center  mb-[50px]">
       
     
     <section className="grid gap-6   mt-[30px] justify-center w-screen max-w-[500px] max-h-[100%] py-10    max-sm:grid-cols-1 max-sm:items-center max-sm:text-[18px] max-sm:ml-10 max-sm:mt-[50px] ">
